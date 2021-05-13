@@ -10,12 +10,12 @@
         <module name="ratings-data-service" />
         <module name="movie-info-service" />
         <module name="discovery-server" />
-        <module name="movia-catalog-service" />
+        <module name="movie-catalog-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="discovery-server" target="11" />
-      <module name="movia-catalog-service" target="11" />
+      <module name="movie-catalog-service" target="11" />
       <module name="movie-info-service" target="11" />
       <module name="ratings-data-service" target="11" />
     </bytecodeTargetLevel>
@@ -23,7 +23,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="discovery-server" options="-parameters" />
-      <module name="movia-catalog-service" options="-parameters" />
+      <module name="movie-catalog-service" options="-parameters" />
       <module name="movie-info-service" options="-parameters" />
       <module name="ratings-data-service" options="-parameters" />
     </option>
