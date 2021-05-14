@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/ratingsdata")
+@RequestMapping
 public class RatingsDataResource {
 
     @GetMapping("/{movieId}")
@@ -26,9 +26,7 @@ public class RatingsDataResource {
                 new Rating("200", 4)
         );
 
-        UserRating userRating = new UserRating();
-        userRating.setRatings(userRatings);
-        return userRating;
+        return new UserRating(userId, userRatings);
     }
 
 
